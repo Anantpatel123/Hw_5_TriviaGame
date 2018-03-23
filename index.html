@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+	<body>
+
+		<div id="container">
+
+			<div id="Firstpage">
+				<h2>NBA Trivia Game!!!</h2>
+				<hr>
+				<br><br>
+				<!-- <h2>"start button" will start the game</h2> -->
+				<button id="StartGame">Start Game</button>
+			</div>
+			
+
+			<div id="Secondpage">		
+				<!-- <div id="timer">	 -->
+				<h2>NBA Trivia Game!!!</h2>
+				<hr>
+				<br>
+				<h3 id = "timer_set">Time remaining: <span id = "number"></span></h3>			
+				<br>
+				<div id="AllQuestions">
+
+					<p><b>1) Who was the youngest player to score 10,000 points in the NBA?</b></p>						
+						<input type="radio" name="q1" value="right">Lebron James 
+						<input type="radio" name="q1" value="wrong">Michael Jordan
+						<input type="radio" name="q1" value="wrong">Kobe Bryant
+						<input type="radio" name="q1" value="wrong">Wilt Chamberlain					
+					<br>
+					<p><b>2) What team owns the longest winning streak in NBA history?</b></p>
+						<input type="radio" name="q2" value="right">Los Angeles Lakers
+						<input type="radio" name="q2" value="wrong">Golden State Warriors
+						<input type="radio" name="q2" value="wrong">Miami Heat
+						<input type="radio" name="q2" value="wrong">Chicago Bulls
+					<br>
+					<p><b>3) What player won All-Star Game MVP, NBA MVP, and NBA Finals MVP awards in 2000?</b></p>
+						<input type="radio" name="q3" value="wrong">Michael Jordan
+						<input type="radio" name="q3" value="wrong">Kobe Bryant
+						<input type="radio" name="q3" value="right">Shaquille O'neal
+						<input type="radio" name="q3" value="wrong">Tim Duncan
+					<br>
+					<p><b>4) What NBA player has won the most league MVPs?</b></p>
+						<input type="radio" name="q4" value="wrong">Stephan Curry
+						<input type="radio" name="q4" value="right">Kareem Abdul-Jabbar
+						<input type="radio" name="q4" value="wrong">Michael Jordan
+						<input type="radio" name="q4" value="wrong">Lebron James
+					<br>
+					<p><b>5) Who won the most NBA Finals MVP's?</b></p>
+						<input type="radio" name="q5" value="wrong">Magic Johnson
+						<input type="radio" name="q5" value="wrong">Kobe Bryant
+						<input type="radio" name="q5" value="wrong">Larry Bird
+						<input type="radio" name="q5" value="right">Michael Jordan
+					<br>
+									
+				</div>
+				<hr>
+				<br>
+				<br>
+					<button id ="Submit_button">Submit</button>
+
+				</div>
+
+			<div id="Thirdpage">
+					<h2>NBA Trivia Game!!!</h2>
+					<hr>
+					<br>
+					<h3>Final Results</h3>
+					<br>
+
+					<h4>Correct Answers: <span id = "correct_answers">0</span></h4>
+					<h4>Incorrect Answers: <span id = "wrong_answers">0</span></h4>
+					<h4>Unanswered: <span id = "unanswered">0</span></h4>					
+			</div>
+
+		</div>
+		
+		<script src="assets/javascript/app.js"></script>
+		
+	</body>
+</html>
